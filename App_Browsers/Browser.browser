@@ -1,0 +1,14 @@
+﻿<browsers>
+  <!-- IN:6121 Enable MaintainScrollPositionOnPostback for Safari & Chrome -->
+  <browser refID="WebKit">
+    <capabilities>
+      <capability name="supportsMaintainScrollPositionOnPostback" value="true" />
+    </capabilities>
+  </browser>
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter controlType="System.Web.UI.HtmlControls.HtmlForm"
+               adapterType="Salamander.Web.Core.Controls.CacheGenerationFormControlAdapter" />
+    </controlAdapters>
+  </browser>
+</browsers>

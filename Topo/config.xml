@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<geo>
+  <!-- Order represents both the display order (we will display the lowest level of detail first) and the order of detail (highest number represents most detail) -->
+  <mapLevel displayName="1:110m countries" name="m110_a0_country" order="1" level="country" matchNames="name,ne_adm0_a3,ne_sov_a3,ne_gu_a3,iso_3166_1_a3,iso_3166_1_a2,ne_type,formal_name,continent,subregion,region_un,region_wb">
+    <notes>
+      Countries at a scale of 1:110,000,000.
+      There are approximately 247 countries in the world, and countries distinguish between metropolitan (homeland) and independent and semi-independent portions of sovereign states. The boundaries of countries are according to defacto status.
+    </notes>
+  </mapLevel>
+  <mapLevel displayName="1:50m countries" name="m50_a0_country" order="2" level="country" matchNames="name,ne_adm0_a3,ne_sov_a3,ne_gu_a3,iso_3166_1_a3,iso_3166_1_a2,ne_type,formal_name,continent,subregion,region_un,region_wb">
+    <notes>
+      Countries at a scale of 1:50,000,000.
+      There are approximately 247 countries in the world, and countries distinguish between metropolitan (homeland) and independent and semi-independent portions of sovereign states. The boundaries of countries are according to defacto status.
+    </notes>
+  </mapLevel>
+  <mapLevel displayName="1:50m subunits" name="m50_a0_subunits" order="3" level="subunit" matchNames="name,ne_adm0_a3,ne_sov_a3,ne_gu_a3,ne_su_a3,ne_type,continent,subregion,region_un,region_wb">
+    <notes>
+      Subunits at a scale of 1:50,000,000.
+      There are approximately 197 sovereign states in the world. This level includes country subdivisions and the smallest map units. Examples of subdivisions are Great Britain is broken down into England, Scotland, Wales and Northern Ireland.
+
+      At this level, ne_su_a3 contains the alpha 3 code for the subunit e.g. SCT for Scotland,  this value should correspond to the ISO 3166-2 suffix. iso_3166_1_a3 is not reliably populated at this level.
+
+      Also, at this level, ne_adm0_a3 does not consistently correspond to iso_a3, for example, Guadeloupe has ne_adm0_a3 = 'FRA' and iso_3166_a_a3 = 'GLP'
+    </notes>
+  </mapLevel>
+  <mapLevel displayName="1:10m countries" name="m10_a0_country" order="4" level="country" matchNames="name,ne_adm0_a3,ne_sov_a3,ne_gu_a3,iso_3166_1_a3,iso_3166_1_a2,ne_type,formal_name,continent,subregion,region_un,region_wb">
+    <notes>
+      Countries at a scale of 1:10,000,000.
+      There are approximately 247 countries in the world, and countries distinguish between metropolitan (homeland) and independent and semi-independent portions of sovereign states. The boundaries of countries are according to defacto status.
+    </notes>
+  </mapLevel>
+  <mapLevel displayName="1:10m subunits" name="m10_a0_subunits" order="5" level="subunit" matchNames="name,ne_adm0_a3,ne_sov_a3,ne_gu_a3,ne_su_a3,ne_type,continent,subregion,region_un,region_wb">
+    <notes>
+      Subunits at a scale of 1:10,000,000.
+      There are approximately 197 sovereign states in the world. This level includes country subdivisions and the smallest map units. Examples of subdivisions are Great Britain is broken down into England, Scotland, Wales and Northern Ireland.
+
+      At 10m subunits level, ne_su_a3 contains the alpha 3 code for the subunit e.g. SCT for Scotland, this value should correspond to the ISO 3166-2 suffix.
+    </notes>
+  </mapLevel>
+  <mapLevel displayName="1:10m administrative" name="m10_a1" order="6" level="administrative" matchNames="name,ne_adm0_a3,ne_sov_a3,ne_gu_a3,ne_adm1_code,iso_3166_1_a2,ne_type,region">
+    <notes>
+      Administrative areas (States, Provinces) at a scale of 1:10,000,000.
+      Internal, first-order administrative boundaries for all but a few countries (Antarctica, some disputed areas, tiny island nations, and principalities such as Monaco, Andorra, Liechtenstein, and San Marino).
+
+      At 10m administrative level, ne_gu_a3 appears to contain the alpha 3 code for the subunit e.g. SCT for Scotland, this value should correspond to the ISO 3166-2 suffix.
+    </notes>
+  </mapLevel>
+  <notes>
+    The most reliable code to distinguish countries is ne_adm0_a3. This roughly corresponds to ISO 3166-1 Alpha 3 with some exceptions.
+    Some disputed areas are encompassed by the ne_adm0_a3 code but do not have an ISO 3166-1 code.
+
+    In the following instances the ne_adm03_a3 codes differ from iso_3166_1_a3 codes:
+
+    ne_adm0_a3  iso_3166_1_a3 Name
+    ALD         ALA           Aland
+    ATC         -99           Ashmore and Cartier Is.
+    BJN         -99           Bajo Nuevo Bank (Petrel Is.)
+    CLP         -99           Clipperton I.
+    CNM         -99           Cyprus U.N. Buffer Zone
+    CSI         -99           Coral Sea Is.
+    CYN         -99           N. Cyprus
+    ESB         -99           Dhekelia
+    IOA         -99           Indian Ocean Ter.
+    KAB         -99           Baikonur
+    KAS         -99           Saichen Glacier
+    KOS         -99           Kosovo
+    PGA         -99           Spratly Is.
+    PSX         PSE           Palestine
+    SAH         ESH           W. Sahara
+    SCR         -99           Scarborough Reef
+    SDS         SSD           S. Sudan
+    SER         -99           Serranilla Bank
+    SOL         -99           Somaliland
+    USG         -99           USNB Guantanamo Bay
+    WSB         -99           Akrotiri
+    
+    Also the ne_adm0_a3 codes do not include certain subdivisions which do have iso_3166_1_a3 country codes:
+    
+  </notes>
+</geo>

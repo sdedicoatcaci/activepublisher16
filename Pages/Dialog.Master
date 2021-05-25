@@ -1,0 +1,30 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dialog.master.cs" Inherits="Salamander.Web.Pages.Dialog" %>
+<%@ Register TagPrefix="cc1" Namespace="Salamander.Web.Util.Controls" Assembly="Salamander.Web.Util" %>
+<%@ Register TagPrefix="cc1" Namespace="Salamander.Web.Core.Controls" Assembly="Salamander.Web.Core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">    
+    <title>Dialog</title>
+    <!-- TODO: Move this somewhere better -->
+    <style>
+        body {
+            font-family: Arial;
+	        font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="false"  EnableScriptGlobalization="true" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            var returnVal = '';            
+            //]]>                
+        </script>
+    </form>
+</body>
+</html>
